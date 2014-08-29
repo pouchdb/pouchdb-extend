@@ -102,6 +102,9 @@ function extend() {
       for (name in options) {
         //if (options.hasOwnProperty(name)) {
         if (!(name in Object.prototype)) {
+          if (isArray(options) && !/\d+/.test(name)) {
+            continue;
+          }
 
           src = target[name];
           copy = options[name];
