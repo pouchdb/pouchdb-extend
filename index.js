@@ -73,7 +73,9 @@ function extend() {
     target = arguments[0] || {},
     i = 1,
     length = arguments.length,
-    deep = false;
+    deep = false,
+    numericStringRegex = /\d+/,
+    optionsIsArray;
 
   // Handle a deep copy situation
   if (typeof target === "boolean") {
@@ -98,10 +100,14 @@ function extend() {
   for (; i < length; i++) {
     // Only deal with non-null/undefined values
     if ((options = arguments[i]) != null) {
+      optionsIsArray = isArray(options);
       // Extend the base object
       for (name in options) {
         //if (options.hasOwnProperty(name)) {
         if (!(name in Object.prototype)) {
+          if (optionsIsArray && !numericStringRegex.test(name)) {
+            continue;
+          }
 
           src = target[name];
           copy = options[name];
