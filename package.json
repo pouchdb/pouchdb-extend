@@ -1,6 +1,6 @@
 {
   "name": "pouchdb-extend",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "extend() method taken from JQuery 1.9.0 for use in PouchDB",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nolanlawson/pouchdb-extend.git"
+    "url": "https://github.com/pouchdb/pouchdb-extend.git"
   },
   "keywords": [
     "pouchdb",
@@ -17,7 +17,7 @@
   "author": "Nolan Lawson <nolan.lawson@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nolanlawson/pouchdb-extend/issues"
+    "url": "https://github.com/pouchdb/pouchdb-extend/issues"
   },
-  "homepage": "https://github.com/nolanlawson/pouchdb-extend"
+  "homepage": "https://github.com/pouchdb/pouchdb-extend"
 }
