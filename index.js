@@ -73,7 +73,12 @@ function extend() {
   // "call stack exceeded", so it's been unrolled to use a literal stack
   // (see https://github.com/pouchdb/pouchdb/issues/2543)
   var stack = [];
-  var args = Array.prototype.slice.apply(arguments);
+  var i = -1;
+  var len = arguments.length;
+  var args = new Array(len);
+  while (++i < len) {
+    args[i] = arguments[i];
+  }
   var container = {};
   stack.push({args: args, result: {container: container, key: 'key'}});
   var next;
