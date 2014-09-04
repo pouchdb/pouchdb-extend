@@ -1,6 +1,6 @@
 {
   "name": "pouchdb-extend",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "extend() method taken from JQuery 1.9.0 for use in PouchDB",
   "main": "index.js",
   "scripts": {
