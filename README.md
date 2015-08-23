@@ -1,7 +1,7 @@
 pouchdb-extend
 ===============
 
-Deprecated notice
+Deprecation notice
 ---
 
 As of PouchDB commit [f17d58](https://github.com/pouchdb/pouchdb/commit/f17d58a95941e7f2bb8d2505800decbe0435cf0f), this project is deprecated. PouchDB now has a custom `extend()` function that is inside of PouchDB itself.
