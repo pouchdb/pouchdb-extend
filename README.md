@@ -1,6 +1,8 @@
 pouchdb-extend
 ===============
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pouchdb/pouchdb-extend.svg)](https://greenkeeper.io/)
+
 Deprecation notice
 ---
 
